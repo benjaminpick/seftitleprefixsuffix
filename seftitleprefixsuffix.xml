@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>SEF Title Prefix and Suffix</name>
+	<author>Radoslaw Kubera</author>
+	<creationDate>November 2008</creationDate>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>radek@kubera.org</authorEmail>
+	<authorUrl>www.sefservicemap.com</authorUrl>
+	<version>2.0</version>
+	<description>This plugin adds prefix and suffix to title</description>
+	<files>
+		<filename plugin="seftitleprefixsuffix">seftitleprefixsuffix.php</filename>
+	</files>
+	<params>
+		<param name="titleprefix" type="text" default="" label="Title prefix" size="50" description="Enter title prefix"/>
+		<param name="titlesuffix" type="text" default="" label="Title suffix" size="50" description="Enter title suffix"/>
+	</params>
+</install>
