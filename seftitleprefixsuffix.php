@@ -17,11 +17,7 @@ class plgSystemSeftitleprefixsuffix extends JPlugin
 	}
 
 	function onAfterDispatch() {
-		$db = JFactory::getDBO();
-		$query = "select id,params from #__plugins where element='seftitleprefixsuffix'";
-		$db->setQuery($query);
-		$plugin = $db->loadObject();
-		$params = new JParameter($plugin->params);
+		$params = $this->params;
 		$suffix = $params->get('titlesuffix');
 		$prefix = $params->get('titleprefix');
 		$spacer = $params->get('spacer'); // add BP
