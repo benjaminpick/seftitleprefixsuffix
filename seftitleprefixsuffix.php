@@ -16,7 +16,11 @@ class plgSystemSeftitleprefixsuffix extends JPlugin
 		parent::__construct($subject, $config);
 	}
 
-	function onAfterDispatch() {
+	function onBeforeCompileHead() {
+		$app = JFactory::getApplication();
+		if(!$app->isSite()) 
+			return;
+			
 		$params = $this->params;
 		$suffix = $params->get('titlesuffix');
 		$prefix = $params->get('titleprefix');
@@ -36,6 +40,5 @@ class plgSystemSeftitleprefixsuffix extends JPlugin
 				$title.= $spacer . $suffix;
 		}
 		$document->setTitle($title);
-
 	}
 }
