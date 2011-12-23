@@ -24,14 +24,20 @@ class plgSystemSeftitleprefixsuffix extends JPlugin
 		$params = new JParameter($plugin->params);
 		$suffix = $params->get('titlesuffix');
 		$prefix = $params->get('titleprefix');
+		$spacer = $params->get('spacer'); // add BP
+		$showifequal = $params->get('showifequal', 'no') == 'yes';
+		
+		$spacer .= ' '; // un-trim
 		$document =& JFactory::getDocument();
 		$title = $document->getTitle();
 		if ($prefix) {
-			$title  = $prefix.$title;
+			if ($showifequal || $prefix != $title)	
+				$title  = $prefix.$spacer.$title;
 		}
 
-		if ($suffix) {
-			$title.= $suffix;
+		if ($suffix && $suffix != $title) {
+			if ($showifequal || $suffix != $title)	
+				$title.= $spacer . $suffix;
 		}
 		$document->setTitle($title);
 
