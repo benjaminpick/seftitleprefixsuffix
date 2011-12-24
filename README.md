@@ -13,3 +13,8 @@ Features:
 ---------
 - Add a fixed Prefix and/or Suffix to all pages in the title-Element
 - Do not add prefix/suffix if they are already present in title (e.g. Home-Page)
+
+Roadmap:
+--------
+
+I don't have any plans for now other than maintaining it. So if you have feature requests ... please fork this project and send a pull request! :-)
