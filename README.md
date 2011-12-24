@@ -17,4 +17,4 @@ Features:
 Roadmap:
 --------
 
-I don't have any plans for now other than maintaining it. So if you have feature requests ... please fork this project and send a pull request! :-)
+I don't have any plans for now. So if you have feature requests ... please fork this project and send a pull request! :-)
