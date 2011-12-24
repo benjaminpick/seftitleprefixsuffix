@@ -5,7 +5,7 @@ SEF Title Prefix Suffix
 *Current Version*: 2.0<br>
 *Compatible with*: Joomla! 1.5, Joomla! 2.5
 
-Original Author Radoslaw Kubera (www.sefservicemap.com)
+__Original Author__ Radoslaw Kubera (www.sefservicemap.com)
 
 Features:
 ---------
