@@ -24,7 +24,7 @@ class plgSystemSeftitleprefixsuffix extends JPlugin
 		$params = $this->params;
 		$suffix = $params->get('titlesuffix');
 		$prefix = $params->get('titleprefix');
-		$spacer = $params->get('spacer'); // add BP
+		$spacer = $params->get('spacer');
 		$showifequal = $params->get('showifequal', 'no') == 'yes';
 		
 		$spacer .= ' '; // un-trim
@@ -32,7 +32,7 @@ class plgSystemSeftitleprefixsuffix extends JPlugin
 		$title = $document->getTitle();
 		if ($prefix) {
 			if ($showifequal || $prefix != $title)	
-				$title  = $prefix.$spacer.$title;
+				$title  = $prefix . $spacer . $title;
 		}
 
 		if ($suffix && $suffix != $title) {
